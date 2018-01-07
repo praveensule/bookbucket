@@ -1,0 +1,11 @@
+.index-page .main {
+	height: 87vh;
+}
+
+.index-page .main .container {
+	text-align: center;
+}
+
+.index-page .search-wrap {
+	margin-top: 20rem;
+}
