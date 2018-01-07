@@ -32,19 +32,21 @@
 	        	<span class="icon-bar"></span>
 	        	<span class="icon-bar"></span>
 	    	</button>
-	    	<a class="navbar-brand" href="#"><div class="ripple-container"></div></a>
+	    	<a class="navbar-brand" data-toggle="modal" data-target="#location" href="#">
+	    		<i class="fa fa-map-marker" aria-hidden="true"></i> Select a region
+			</a>
 	    </div>
 
 	    <div class="collapse navbar-collapse" id="navigation-index">
 	    	<ul class="nav navbar-nav navbar-right">
 				<li>
 					<a href="#" data-toggle="modal" data-target="#sign-up" >
-						<i class="fa fa-user-plus"></i>Sign up
+						<i class="fa fa-user-plus"></i> Sign up
 					</a>
 				</li>
 				<li>
 					<a href="#" data-toggle="modal" data-target="#sign-in" >
-						<i class="fa fa-sign-in"></i>Sign in
+						<i class="fa fa-sign-in"></i> Sign in
 					</a>
 				</li>				
 	    	</ul>
@@ -74,7 +76,7 @@
 				</div>
 				<div class="col-lg-12">
 					<div class="form-group">
-				    	<button type="button" class="btn btn-primary" data-dismiss="modal">BookBucket Search</button>
+				    	<button type="button" class="btn btn-primary" data-dismiss="modal">BookBucket Search <i class="fa fa-search" aria-hidden="true"></i></button>
 					</div>
 				</div>	
 			</div>		
@@ -125,19 +127,19 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="singInLabel">Sign in</h4>
+	        <h4 class="modal-title" id="singInLabel"><i class="fa fa-sign-in"></i> Sign in</h4>
 	      </div>
 	      <div class="modal-body">
 	        <form name="sign-in">
 	        	<div class="col-xl-12">
 					<div class="form-group label-floating">
-						<label class="control-label">Registered BookBucket Email / Phone</label>
+						<label class="control-label">Registered BookBucket Email <i class="fa fa-envelope" aria-hidden="true"></i> / Phone <i class="fa fa-mobile" aria-hidden="true"></i></label>
 						<input type="text" class="form-control">
 					</div>
 				</div>
 				<div class="col-xl-12">
 					<div class="form-group label-floating">
-						<label class="control-label">BookBucket PIN</label>
+						<label class="control-label">BookBucket PIN <i class="fa fa-key" aria-hidden="true"></i></label>
 						<input type="password" class="form-control">
 					</div>
 				</div>
@@ -157,13 +159,13 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="singInLabel">Sign Up</h4>
+	        <h4 class="modal-title" id="singUpLabel"><i class="fa fa-user-plus"></i> Sign Up</h4>
 	      </div>
 	      <div class="modal-body">
 	        <form name="sign-in">
 	        	<div class="col-xl-12">
 					<div class="form-group label-floating">
-						<label class="control-label">Enter your Email / Phone</label>
+						<label class="control-label">Enter your Email <i class="fa fa-envelope" aria-hidden="true"></i> / Phone <i class="fa fa-mobile" aria-hidden="true"></i></label>
 						<input type="text" class="form-control">
 					</div>
 				</div>
@@ -172,6 +174,32 @@
 	      <div class="modal-footer">
 	      	<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
 	        <button type="button" class="btn btn-primary btn-simple">Sign up</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Sign in -->
+	<div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="locationLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="locationLabel"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form name="sign-in">
+	        	<div class="col-xl-12">
+					<div class="form-group label-floating">
+						<label class="control-label">Enter your city <i class="fa fa-location-arrow" aria-hidden="true"></i></label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+	        </form>	        
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary btn-simple">OK</button>
 	      </div>
 	    </div>
 	  </div>
