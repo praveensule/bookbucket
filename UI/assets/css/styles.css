@@ -1,3 +1,18 @@
+.margin-auto {
+	margin: auto;
+}
+
+.width-60 {
+	width: 60%;
+}
+
+.primary-text {
+	color: #9c27b0;
+}
+
+.card {
+	margin-top: 2rem;
+}
 .index-page .main {
 	height: 87vh;
 }
@@ -8,4 +23,15 @@
 
 .index-page .search-wrap {
 	margin-top: 20rem;
+}
+
+
+/* Search result page */
+
+.header {
+	margin-top: 9rem;
+}
+
+.wrapper > .header {
+	min-height: 80px;
 }
