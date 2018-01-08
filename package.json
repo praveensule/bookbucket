@@ -1,0 +1,21 @@
+{
+  "name": "bookbucket",
+  "version": "1.0.0",
+  "description": "App to share used books",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://praveensule@bitbucket.org/bookbucket/bookbucket.git"
+  },
+  "author": "praveen",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bookbucket/bookbucket#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9"
+  }
+}
