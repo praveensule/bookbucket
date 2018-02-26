@@ -38,12 +38,7 @@ exports.findAll = function(req, res) {
 
 exports.findByName = function(req, res) {
     // Retrieve and return all users from the database.
-	console.log(req.params.userName);
-	User.
-	find().
-	where('name').equals(req.params.userName).
-	limit(5).
-	select('name password').exec(function(err, users){
+	User.find().where('name').equals(req.params.userName).limit(5).select('name password').exec(function(err, users){
         if(err) {
             res.status(500).send({message: "Some error ocuured while retrieving users."});
         } else {
