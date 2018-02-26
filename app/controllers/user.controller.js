@@ -2,7 +2,7 @@ var User = require('../models/user.model.js');
 
 exports.create = function(req, res) {
 	// Create and Save a new User
-	console.log(req.body.userId);
+	console.log(req.body);
     if(!req.body.userId) {
         return res.status(400).send({message: "User can not be empty"});
     }
