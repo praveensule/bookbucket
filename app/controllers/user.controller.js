@@ -2,7 +2,7 @@ var User = require('../models/user.model.js');
 
 exports.create = function(req, res) {
 	// Create and Save a new User
-	console.log(req.body.userId);
+	console.log(req.body);
     if(!req.body.userId) {
         return res.status(400).send({message: "User can not be empty"});
     }
@@ -28,6 +28,22 @@ exports.create = function(req, res) {
 exports.findAll = function(req, res) {
     // Retrieve and return all users from the database.
     User.find(function(err, users){
+        if(err) {
+            res.status(500).send({message: "Some error ocuured while retrieving users."});
+        } else {
+            res.send(users);
+        }
+    });
+};
+
+exports.findByName = function(req, res) {
+    // Retrieve and return all users from the database.
+	console.log(req.params.userName);
+	User.
+	find().
+	where('name').equals(req.params.userName).
+	limit(5).
+	select('name password').exec(function(err, users){
         if(err) {
             res.status(500).send({message: "Some error ocuured while retrieving users."});
         } else {
