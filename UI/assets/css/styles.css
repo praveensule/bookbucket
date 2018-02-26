@@ -13,6 +13,13 @@
 .card {
 	margin-top: 2rem;
 }
+
+.img-container {
+	height: 215px;
+	background-size: cover;
+    background-position: center center;
+}
+
 .index-page .main {
 	height: 87vh;
 }
@@ -29,9 +36,26 @@
 /* Search result page */
 
 .header {
-	margin-top: 9rem;
+	margin-top: 8rem;
 }
 
 .wrapper > .header {
 	min-height: 80px;
+}
+
+/* -------------- media ----------- */
+@media only screen and (max-width : 767px) {
+	.logo-container {
+		text-align: center;
+	}
+
+	.img-container {
+		width: 53%;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	.img-container {
+		width: 73%;
+	}
 }
